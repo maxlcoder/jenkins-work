@@ -11,5 +11,10 @@ pipeline {
                 sh 'php --version'
             }
         }
+        stage('result') {
+            steps {
+                sh 'echo hello'
+            }
+        }
     }
 }
